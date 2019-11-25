@@ -80,14 +80,16 @@ Action Name                   | sps-api-request id | Request class              
 Action Name                                      | sps-api-request id | Request class                                           |
 ---                                              | ---                | ---                                                     |
 ドコモケータイ払い 取消・返金要求処理 (簡易継続) | `ST02-00303-401`   | `Sbpayment::API::Docomo::SimplifiedCancelRefundRequest` |
-ドコモケータイ払い 購入要求要求処理 (継続課金(定期・従量)) | `ST01-00104-401`   | `Sbpayment::API::Docomo::AuthorizationRequest` |
+ドコモケータイ払い 購入要求処理 (継続課金(定期・従量)) | `ST01-00104-401`   | `Sbpayment::API::Docomo::AuthorizationRequest` |
+ドコモケータイ払い 売上要求処理 (継続課金(定期・従量))    | `ST02-00201-401`   | `Sbpayment::API::Docomo::CommitRequest`        |
 
 ###### au
 
 Action Name                       | sps-api-request id | Request class                       |
 ---                               | ---                | ---                                 |
 auかんたん決済 取消・返金要求処理 | `ST02-00303-402`   | `Sbpayment::API::Au::CancelRefundRequest` |
-auかんたん決済 購入要求要求処理 (継続課金(定期・従量)) | `ST01-00104-402`   | `Sbpayment::API::Au::AuthorizationRequest` |
+auかんたん決済 購入要求処理 (継続課金(定期・従量)) | `ST01-00104-402`   | `Sbpayment::API::Au::AuthorizationRequest` |
+auかんたん決済 売上要求処理 (継続課金(定期・従量))     | `ST02-00201-402`   | `Sbpayment::API::Au::CommitRequest`        |
 
 ###### Softbank
 
