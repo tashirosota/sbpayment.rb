@@ -15,9 +15,9 @@ module Sbpayment
         key :item_name, type: :M
         key :tax
         key :amount
-        key :free1
-        key :free2
-        key :free3
+        key :free1, type: :M
+        key :free2, type: :M
+        key :free3, type: :M
         key :order_rowno
         key :request_date, default: -> { TimeUtil.format_current_time }
         key :limit_second
