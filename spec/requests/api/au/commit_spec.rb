@@ -38,7 +38,7 @@ RSpec.describe 'Au API behavior' do
 
       describe '#perform' do
         xcontext 'success' do
-          # couldn't implement because trackng_id is nil
+          # couldn't implement because tracking_id is nil
         end
   
         context 'failed' do
