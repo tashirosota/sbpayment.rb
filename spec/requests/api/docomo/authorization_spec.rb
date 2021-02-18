@@ -14,7 +14,7 @@ RSpec.describe 'Docomo API behavior' do
 
   describe 'AuthorizationRequest' do
     around do |e|
-      VCR.use_cassette 'docomo-authorization' do
+      VCR.use_cassette 'docomo/authorization_with_invalid_dealing_type' do
         e.run
       end
     end

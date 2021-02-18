@@ -13,7 +13,7 @@ RSpec.describe 'au API behavior' do
   end
   describe 'AuthorizationRequest' do
     around do |e|
-      VCR.use_cassette 'au-authorization' do
+      VCR.use_cassette 'au/authorization_with_invalid_dealing_type' do
         e.run
       end
     end

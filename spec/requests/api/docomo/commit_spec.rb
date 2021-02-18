@@ -13,7 +13,7 @@ RSpec.describe 'Docomo API behavior' do
   end
   describe 'CommitRequest' do
     around do |e|
-      VCR.use_cassette 'docomo-commit' do
+      VCR.use_cassette 'docomo/commit_with_invalid_dealing_type' do
         e.run
       end
     end

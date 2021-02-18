@@ -13,7 +13,7 @@ RSpec.describe 'Au API behavior' do
   end
   describe 'CommitRequest' do
     around do |e|
-      VCR.use_cassette 'au-commit' do
+      VCR.use_cassette 'au/commit_with_invalid_dealing_type' do
         e.run
       end
     end
