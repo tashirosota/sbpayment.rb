@@ -13,6 +13,9 @@ require 'selenium-webdriver'
 require_relative 'support/get_tokens_helper'
 
 RSpec.configure do |c|
+  c.disable_monkey_patching!
+  c.warnings = true
+  c.raise_on_warning = true
   c.include GetTokensHelper
 end
 

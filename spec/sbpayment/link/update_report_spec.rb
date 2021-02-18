@@ -1,6 +1,4 @@
-require 'spec_helper'
-
-describe Sbpayment::Link::UpdateReport do
+RSpec.describe Sbpayment::Link::UpdateReport do
   shared_context "prepare update result params" do
     before do
       Sbpayment.configure do |x|

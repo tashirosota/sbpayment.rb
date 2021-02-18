@@ -1,8 +1,6 @@
 # coding: Shift_JIS
 
-require_relative '../../../spec_helper'
-
-describe Sbpayment::Link::PurchaseRequest::FREE_CSV_FIELD_VALIDATOR do
+RSpec.describe Sbpayment::Link::PurchaseRequest::FREE_CSV_FIELD_VALIDATOR do
   subject { described_class }
 
   describe '.valid?' do
@@ -16,7 +14,7 @@ describe Sbpayment::Link::PurchaseRequest::FREE_CSV_FIELD_VALIDATOR do
   end
 end
 
-describe Sbpayment::Link::PurchaseRequest::FREE_CSV_EMAIL_VALIDATOR do
+RSpec.describe Sbpayment::Link::PurchaseRequest::FREE_CSV_EMAIL_VALIDATOR do
   subject { described_class }
 
   describe '.valid?' do

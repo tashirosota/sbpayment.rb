@@ -1,7 +1,4 @@
-require 'spec_helper'
-require 'securerandom'
-
-describe 'Au API behavior' do
+RSpec.describe 'Au API behavior' do
   before do
     Sbpayment.configure do |x|
       x.sandbox = true

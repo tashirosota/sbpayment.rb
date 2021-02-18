@@ -1,6 +1,4 @@
-require 'spec_helper'
-
-describe Sbpayment::ShallowHash do
+RSpec.describe Sbpayment::ShallowHash do
   using Sbpayment::ShallowHash
 
   describe 'Hash#shallow' do

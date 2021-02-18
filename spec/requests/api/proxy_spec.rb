@@ -1,6 +1,4 @@
-require 'spec_helper'
-
-describe 'proxy behavior' do
+RSpec.describe 'proxy behavior' do
 
   def dummy_request
     req = Sbpayment::API::Credit::AuthorizationRequest.new

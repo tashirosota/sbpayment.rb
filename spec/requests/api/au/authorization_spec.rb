@@ -1,6 +1,4 @@
-require 'spec_helper'
-
-describe 'au API behavior' do
+RSpec.describe 'au API behavior' do
   before do
     Sbpayment.configure do |x|
       x.sandbox = true

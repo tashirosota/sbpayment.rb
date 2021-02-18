@@ -1,7 +1,6 @@
-require 'spec_helper'
 require 'rexml/document'
 
-describe Sbpayment::ParameterDefinition do
+RSpec.describe Sbpayment::ParameterDefinition do
   class Example
     include Sbpayment::ParameterDefinition
 

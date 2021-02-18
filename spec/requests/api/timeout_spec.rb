@@ -1,6 +1,4 @@
-require 'spec_helper'
-
-describe 'timeout behavior' do
+RSpec.describe 'timeout behavior' do
 
   def dummy_request
     req = Sbpayment::API::Credit::AuthorizationRequest.new

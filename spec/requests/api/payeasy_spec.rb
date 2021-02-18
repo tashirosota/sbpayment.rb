@@ -1,6 +1,4 @@
-require 'spec_helper'
-
-describe 'PayEasy API behavior' do
+RSpec.describe 'PayEasy API behavior' do
   before do
     Sbpayment.configure do |x|
       x.sandbox = true

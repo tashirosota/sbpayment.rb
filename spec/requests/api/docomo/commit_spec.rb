@@ -1,7 +1,4 @@
-require 'spec_helper'
-require 'securerandom'
-
-describe 'Docomo API behavior' do
+RSpec.describe 'Docomo API behavior' do
   before do
     Sbpayment.configure do |x|
       x.sandbox = true
