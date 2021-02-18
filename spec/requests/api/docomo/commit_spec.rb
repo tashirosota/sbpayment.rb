@@ -29,6 +29,7 @@ RSpec.describe 'Docomo API behavior' do
           merchant_id
           service_id
           tracking_id
+          pay_option_manage
           request_date
           limit_second
           sps_hashcode
