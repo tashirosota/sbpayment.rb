@@ -3,7 +3,7 @@ require_relative '../../response'
 
 module Sbpayment
   module API
-    module Docomo
+    module Au
       class PayOptionManage
         include ParameterDefinition
 
@@ -11,8 +11,8 @@ module Sbpayment
         key :amount
       end
 
-      class CommitRequest < Request
-        tag 'sps-api-request', id: 'ST02-00201-401'
+      class SalesRequest < Request
+        tag 'sps-api-request', id: 'ST02-00201-402'
         key :merchant_id, default: -> { Sbpayment.config.merchant_id }
         key :service_id,  default: -> { Sbpayment.config.service_id }
         key :tracking_id
@@ -22,7 +22,7 @@ module Sbpayment
         key :sps_hashcode
       end
 
-      class CommitResponse < Response
+      class SalesResponse < Response
       end
     end
   end

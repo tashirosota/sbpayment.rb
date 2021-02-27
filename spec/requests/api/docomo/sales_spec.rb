@@ -1,4 +1,4 @@
-RSpec.describe 'Au API behavior' do
+RSpec.describe 'Docomo API behavior' do
   before do
     Sbpayment.configure do |x|
       x.sandbox = true
@@ -11,14 +11,14 @@ RSpec.describe 'Au API behavior' do
       x.cipher_iv           = '580b58e2'
     end
   end
-  describe 'CommitRequest' do
+  describe 'SalesRequest' do
     around do |e|
-      VCR.use_cassette 'au/commit_with_invalid_dealing_type' do
+      VCR.use_cassette 'docomo/sales_with_invalid_dealing_type' do
         e.run
       end
     end
     let(:req) do
-      req = Sbpayment::API::Au::CommitRequest.new
+      req = Sbpayment::API::Docomo::SalesRequest.new
       req.tracking_id   = SecureRandom.hex
       req.request_date  = Sbpayment::TimeUtil.format_current_time
       req
