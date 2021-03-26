@@ -63,6 +63,7 @@ Action Name                   | sps-api-request id | Request class              
 コミット (確定処理)           | `ST02-00101-101`   | `Sbpayment::API::Credit::CommitRequest`               |
 売り上げ連携                  | `ST02-00201-101`   | `Sbpayment::API::Credit::SalesRequest`                |
 決済結果参照                  | `MG01-00101-101`   | `Sbpayment::API::Credit::InquireAuthorizationRequest` |
+継続課金(簡易)解約要求         | `ST02-00302-101`   | `Sbpayment::API::Credit::SimplifiedCancelRequest`     |
 取消要求                      | `ST02-00305-101`   | `Sbpayment::API::Credit::CancelAuthorizationRequest`  |
 返金要求                      | `ST02-00303-101`   | `Sbpayment::API::Credit::RefundRequest`               |
 部分返金要求                  | `ST02-00307-101`   | `Sbpayment::API::Credit::PartlyRefundRequest`         |
@@ -79,15 +80,19 @@ Action Name                   | sps-api-request id | Request class              
 
 Action Name                                      | sps-api-request id | Request class                                           |
 ---                                              | ---                | ---                                                     |
+ドコモケータイ払い 継続課金（簡易）解約要求 | `ST02-00302-401`   | `Sbpayment::API::Docomo::SimplifiedCancelRequest` |
 ドコモケータイ払い 取消・返金要求処理 (簡易継続) | `ST02-00303-401`   | `Sbpayment::API::Docomo::SimplifiedCancelRefundRequest` |
 ドコモケータイ払い 購入要求要求処理 (継続課金(定期・従量)) | `ST01-00104-401`   | `Sbpayment::API::Docomo::AuthorizationRequest` |
+ドコモケータイ払い 売上要求処理 (継続課金(定期・従量))    | `ST02-00201-401`   | `Sbpayment::API::Docomo::SalesRequest`        |
 
 ###### au
 
 Action Name                       | sps-api-request id | Request class                       |
 ---                               | ---                | ---                                 |
 auかんたん決済 取消・返金要求処理 | `ST02-00303-402`   | `Sbpayment::API::Au::CancelRefundRequest` |
+auかんたん決済 継続課金（簡易）解約要求 | `ST02-00302-402`   | `Sbpayment::API::Au::SimplifiedCancelRequest` |
 auかんたん決済 購入要求要求処理 (継続課金(定期・従量)) | `ST01-00104-402`   | `Sbpayment::API::Au::AuthorizationRequest` |
+auかんたん決済 売上要求処理 (継続課金(定期・従量))     | `ST02-00201-402`   | `Sbpayment::API::Au::SalesRequest`        |
 
 ###### Softbank
 
